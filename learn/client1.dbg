@@ -1,0 +1,61 @@
+[01/18/16 11:21:13] [INFO] Reading configuration file ngrok.cfg
+[01/18/16 11:21:13] [INFO] [client] Trusting root CAs: [assets/client/tls/ngrokroot.crt]
+[01/18/16 11:21:13] [INFO] Checking for update
+[01/18/16 11:21:13] [DEBG] [ctl:54215bd8] New connection to: 103.37.3.41:4443
+[01/18/16 11:21:13] [DEBG] [ctl:54215bd8] Writing message: {"Type":"Auth","Payload":{"Version":"2","MmVersion":"1.7","User":"","Password":"","OS":"linux","Arch":"386","ClientId":""}}
+[01/18/16 11:21:13] [DEBG] [ctl:54215bd8] Waiting to read message
+[01/18/16 11:21:13] [DEBG] [ctl:54215bd8] Reading message with length: 120
+[01/18/16 11:21:13] [DEBG] [ctl:54215bd8] Read message {"Type":"AuthResp","Payload":{"Version":"2","MmVersion":"1.7","ClientId":"4a5b4eba4c141d610d157f69c9f11971","Error":""}}
+[01/18/16 11:21:13] [INFO] [client] Authenticated with server, client id: 4a5b4eba4c141d610d157f69c9f11971
+[01/18/16 11:21:13] [DEBG] [ctl:54215bd8] Writing message: {"Type":"ReqTunnel","Payload":{"ReqId":"b075108389ecc37e","Protocol":"http+https","Hostname":"","Subdomain":"www","HttpAuth":"","RemotePort":0}}
+[01/18/16 11:21:13] [DEBG] [ctl:54215bd8] Waiting to read message
+[01/18/16 11:21:13] [DEBG] [ctl:54215bd8] Reading message with length: 32
+[01/18/16 11:21:13] [DEBG] [ctl:54215bd8] Read message {"Type":"ReqProxy","Payload":{}}
+[01/18/16 11:21:13] [DEBG] [ctl:54215bd8] Waiting to read message
+[01/18/16 11:21:14] [DEBG] [pxy:3fd107f5] New connection to: 103.37.3.41:4443
+[01/18/16 11:21:14] [DEBG] [pxy:3fd107f5] Writing message: {"Type":"RegProxy","Payload":{"ClientId":"4a5b4eba4c141d610d157f69c9f11971"}}
+[01/18/16 11:21:14] [DEBG] [ctl:54215bd8] Reading message with length: 124
+[01/18/16 11:21:14] [DEBG] [ctl:54215bd8] Read message {"Type":"NewTunnel","Payload":{"ReqId":"b075108389ecc37e","Url":"http://www.tunnel.ptwop.xyz","Protocol":"http","Error":""}}
+[01/18/16 11:21:14] [INFO] [client] Tunnel established at http://www.tunnel.ptwop.xyz
+[01/18/16 11:21:14] [DEBG] [ctl:54215bd8] Waiting to read message
+[01/18/16 11:21:14] [DEBG] [ctl:54215bd8] Reading message with length: 126
+[01/18/16 11:21:14] [DEBG] [ctl:54215bd8] Read message {"Type":"NewTunnel","Payload":{"ReqId":"b075108389ecc37e","Url":"https://www.tunnel.ptwop.xyz","Protocol":"https","Error":""}}
+[01/18/16 11:21:14] [INFO] [client] Tunnel established at https://www.tunnel.ptwop.xyz
+[01/18/16 11:21:14] [DEBG] [ctl:54215bd8] Waiting to read message
+[01/18/16 11:21:14] [DEBG] [pxy:3fd107f5] Waiting to read message
+[01/18/16 11:21:14] [INFO] No update available
+
+隧道链接建立完成
+
+[01/18/16 11:21:33] [DEBG] [ctl:54215bd8] Writing message: {"Type":"Ping","Payload":{}}
+[01/18/16 11:21:34] [DEBG] [ctl:54215bd8] Reading message with length: 28
+[01/18/16 11:21:34] [DEBG] [ctl:54215bd8] Read message {"Type":"Pong","Payload":{}}
+[01/18/16 11:21:34] [DEBG] [ctl:54215bd8] Waiting to read message
+
+开始外部浏览器访问
+
+[01/18/16 11:21:42] [DEBG] [pxy:3fd107f5] Reading message with length: 104
+[01/18/16 11:21:42] [DEBG] [pxy:3fd107f5] Read message {"Type":"StartProxy","Payload":{"Url":"http://www.tunnel.ptwop.xyz","ClientAddr":"117.136.92.55:18669"}}
+[01/18/16 11:21:42] [DEBG] [prv:7bb28e90] New connection to: 127.0.0.1:80
+[01/18/16 11:21:42] [INFO] [prv:7bb28e90] Joined with connection pxy:3fd107f5
+[01/18/16 11:21:42] [DEBG] [ctl:54215bd8] Reading message with length: 32
+[01/18/16 11:21:42] [DEBG] [ctl:54215bd8] Read message {"Type":"ReqProxy","Payload":{}}
+[01/18/16 11:21:42] [DEBG] [ctl:54215bd8] Waiting to read message
+[01/18/16 11:21:42] [DEBG] [pxy:4b361e33] New connection to: 103.37.3.41:4443
+[01/18/16 11:21:42] [DEBG] [pxy:4b361e33] Writing message: {"Type":"RegProxy","Payload":{"ClientId":"4a5b4eba4c141d610d157f69c9f11971"}}
+[01/18/16 11:21:42] [DEBG] [pxy:4b361e33] Waiting to read message
+[01/18/16 11:21:47] [DEBG] [prv:7bb28e90] Copied 661 bytes to pxy:3fd107f5
+[01/18/16 11:21:47] [DEBG] [prv:7bb28e90] Closing
+[01/18/16 11:21:47] [DEBG] [pxy:3fd107f5] Closing
+[01/18/16 11:21:47] [WARN] [pxy:3fd107f5] Copied 1238 bytes to prv:7bb28e90 before failing with error read tcp 192.168.60.16:50357->103.37.3.41:4443: use of closed network connection
+
+访问结束
+
+[01/18/16 11:21:53] [DEBG] [ctl:54215bd8] Writing message: {"Type":"Ping","Payload":{}}
+[01/18/16 11:21:54] [DEBG] [ctl:54215bd8] Reading message with length: 28
+[01/18/16 11:21:54] [DEBG] [ctl:54215bd8] Read message {"Type":"Pong","Payload":{}}
+[01/18/16 11:21:54] [DEBG] [ctl:54215bd8] Waiting to read message
+[01/18/16 11:22:13] [DEBG] [ctl:54215bd8] Writing message: {"Type":"Ping","Payload":{}}
+[01/18/16 11:22:14] [DEBG] [ctl:54215bd8] Reading message with length: 28
+[01/18/16 11:22:14] [DEBG] [ctl:54215bd8] Read message {"Type":"Pong","Payload":{}}
+[01/18/16 11:22:14] [DEBG] [ctl:54215bd8] Waiting to read message

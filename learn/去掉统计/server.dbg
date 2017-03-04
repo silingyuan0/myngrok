@@ -1,0 +1,152 @@
+[01/20/16 09:02:44] [INFO] [registry] [tun] No affinity cache specified
+[01/20/16 09:02:44] [INFO] Listening for public http connections on [::]:80
+[01/20/16 09:02:44] [INFO] Listening for public https connections on [::]:443
+[01/20/16 09:02:44] [INFO] Listening for control and proxy connections on [::]:4443
+[01/20/16 09:03:15] [INFO] [tun:27a22a28] New connection from 202.110.217.131:36183
+[01/20/16 09:03:15] [DEBG] [tun:27a22a28] Waiting to read message
+[01/20/16 09:03:15] [DEBG] [tun:27a22a28] Reading message with length: 123
+[01/20/16 09:03:15] [DEBG] [tun:27a22a28] Read message {"Type":"Auth","Payload":{"Version":"2","MmVersion":"1.7","User":"","Password":"","OS":"linux","Arch":"386","ClientId":""}}
+[01/20/16 09:03:15] [INFO] [ctl:27a22a28] Renamed connection tun:27a22a28
+[01/20/16 09:03:15] [INFO] [registry] [ctl] Registered control with id 9c3d1ecd55d3a05198b70f213091d3ff
+[01/20/16 09:03:15] [DEBG] [ctl:27a22a28] [9c3d1ecd55d3a05198b70f213091d3ff] Writing message: {"Type":"AuthResp","Payload":{"Version":"2","MmVersion":"1.7","ClientId":"9c3d1ecd55d3a05198b70f213091d3ff","Error":""}}
+[01/20/16 09:03:15] [DEBG] [ctl:27a22a28] [9c3d1ecd55d3a05198b70f213091d3ff] Writing message: {"Type":"ReqProxy","Payload":{}}
+[01/20/16 09:03:15] [DEBG] [ctl:27a22a28] [9c3d1ecd55d3a05198b70f213091d3ff] Waiting to read message
+[01/20/16 09:03:15] [DEBG] [ctl:27a22a28] [9c3d1ecd55d3a05198b70f213091d3ff] Reading message with length: 144
+[01/20/16 09:03:15] [DEBG] [ctl:27a22a28] [9c3d1ecd55d3a05198b70f213091d3ff] Read message {"Type":"ReqTunnel","Payload":{"ReqId":"3cd3a36c440aed97","Protocol":"http+https","Hostname":"","Subdomain":"www","HttpAuth":"","RemotePort":0}}
+[01/20/16 09:03:15] [DEBG] [ctl:27a22a28] [9c3d1ecd55d3a05198b70f213091d3ff] Waiting to read message
+[01/20/16 09:03:15] [DEBG] [ctl:27a22a28] [9c3d1ecd55d3a05198b70f213091d3ff] Registering new tunnel
+[01/20/16 09:03:15] [INFO] [http://www.tunnel.ptwop.xyz] Registered new tunnel on: ctl:27a22a28
+[01/20/16 09:03:15] [DEBG] [ctl:27a22a28] [9c3d1ecd55d3a05198b70f213091d3ff] Registering new tunnel
+[01/20/16 09:03:15] [INFO] [https://www.tunnel.ptwop.xyz] Registered new tunnel on: ctl:27a22a28
+[01/20/16 09:03:15] [DEBG] [ctl:27a22a28] [9c3d1ecd55d3a05198b70f213091d3ff] Writing message: {"Type":"NewTunnel","Payload":{"ReqId":"3cd3a36c440aed97","Url":"http://www.tunnel.ptwop.xyz","Protocol":"http","Error":""}}
+[01/20/16 09:03:15] [DEBG] [ctl:27a22a28] [9c3d1ecd55d3a05198b70f213091d3ff] Writing message: {"Type":"NewTunnel","Payload":{"ReqId":"3cd3a36c440aed97","Url":"https://www.tunnel.ptwop.xyz","Protocol":"https","Error":""}}
+[01/20/16 09:03:15] [INFO] [tun:95a7b64] New connection from 202.110.217.131:36184
+[01/20/16 09:03:15] [DEBG] [tun:95a7b64] Waiting to read message
+[01/20/16 09:03:16] [DEBG] [tun:95a7b64] Reading message with length: 77
+[01/20/16 09:03:16] [DEBG] [tun:95a7b64] Read message {"Type":"RegProxy","Payload":{"ClientId":"9c3d1ecd55d3a05198b70f213091d3ff"}}
+[01/20/16 09:03:16] [INFO] [pxy:95a7b64] Renamed connection tun:95a7b64
+[01/20/16 09:03:16] [INFO] [pxy:95a7b64] Registering new proxy for 9c3d1ecd55d3a05198b70f213091d3ff
+[01/20/16 09:03:16] [INFO] [pxy:95a7b64] [9c3d1ecd55d3a05198b70f213091d3ff] Registered
+[01/20/16 09:03:44] [INFO] [pub:568b0e4f] New connection from 117.136.78.228:21669
+[01/20/16 09:03:44] [INFO] [pub:2ae6d8b0] New connection from 117.136.78.228:21670
+[01/20/16 09:03:54] [WARN] [pub:568b0e4f] Failed to read valid http request: read tcp 103.37.3.41:80->117.136.78.228:21669: i/o timeout
+[01/20/16 09:03:54] [DEBG] [pub:568b0e4f] Closing
+[01/20/16 09:03:54] [WARN] [pub:2ae6d8b0] Failed to read valid http request: read tcp 103.37.3.41:80->117.136.78.228:21670: i/o timeout
+[01/20/16 09:03:54] [DEBG] [pub:2ae6d8b0] Closing
+[01/20/16 09:04:12] [INFO] [pub:c5dc8d6] New connection from 117.136.78.228:21672
+[01/20/16 09:04:12] [DEBG] [pub:c5dc8d6] Found hostname www.tunnel.ptwop.xyz in request
+[01/20/16 09:04:12] [INFO] [http://www.tunnel.ptwop.xyz] Got proxy connection pxy:95a7b64
+[01/20/16 09:04:12] [DEBG] [pxy:95a7b64] [9c3d1ecd55d3a05198b70f213091d3ff] [http://www.tunnel.ptwop.xyz] Writing message: {"Type":"StartProxy","Payload":{"Url":"http://www.tunnel.ptwop.xyz","ClientAddr":"117.136.78.228:21672"}}
+[01/20/16 09:04:12] [INFO] [pub:c5dc8d6] Joined with connection pxy:95a7b64
+[01/20/16 09:04:12] [DEBG] [ctl:27a22a28] [9c3d1ecd55d3a05198b70f213091d3ff] Writing message: {"Type":"ReqProxy","Payload":{}}
+[01/20/16 09:04:12] [INFO] [pub:25f95d53] New connection from 117.136.78.228:21673
+[01/20/16 09:04:12] [INFO] [tun:f37399] New connection from 202.110.217.131:36190
+[01/20/16 09:04:12] [DEBG] [tun:f37399] Waiting to read message
+[01/20/16 09:04:13] [DEBG] [tun:f37399] Reading message with length: 77
+[01/20/16 09:04:13] [DEBG] [tun:f37399] Read message {"Type":"RegProxy","Payload":{"ClientId":"9c3d1ecd55d3a05198b70f213091d3ff"}}
+[01/20/16 09:04:13] [INFO] [pxy:f37399] Renamed connection tun:f37399
+[01/20/16 09:04:13] [INFO] [pxy:f37399] Registering new proxy for 9c3d1ecd55d3a05198b70f213091d3ff
+[01/20/16 09:04:13] [INFO] [pxy:f37399] [9c3d1ecd55d3a05198b70f213091d3ff] Registered
+[01/20/16 09:04:18] [DEBG] [pxy:95a7b64] [9c3d1ecd55d3a05198b70f213091d3ff] [http://www.tunnel.ptwop.xyz] Copied 661 bytes to pub:c5dc8d6
+[01/20/16 09:04:18] [DEBG] [pxy:95a7b64] [9c3d1ecd55d3a05198b70f213091d3ff] [http://www.tunnel.ptwop.xyz] Closing
+[01/20/16 09:04:18] [DEBG] [pub:c5dc8d6] Closing
+[01/20/16 09:04:18] [DEBG] [pub:c5dc8d6] Closing
+[01/20/16 09:04:18] [WARN] [pub:c5dc8d6] Copied 1238 bytes to pxy:95a7b64 before failing with error read tcp 103.37.3.41:80->117.136.78.228:21672: use of closed network connection
+[01/20/16 09:04:18] [DEBG] [pub:c5dc8d6] Closing
+[01/20/16 09:04:18] [DEBG] [pub:c5dc8d6] Closing
+[01/20/16 09:04:22] [WARN] [pub:25f95d53] Failed to read valid http request: read tcp 103.37.3.41:80->117.136.78.228:21673: i/o timeout
+[01/20/16 09:04:22] [DEBG] [pub:25f95d53] Closing
+[01/20/16 09:04:26] [INFO] [pub:1bc92f15] New connection from 117.136.78.228:21674
+[01/20/16 09:04:36] [WARN] [pub:1bc92f15] Failed to read valid http request: read tcp 103.37.3.41:80->117.136.78.228:21674: i/o timeout
+[01/20/16 09:04:36] [DEBG] [pub:1bc92f15] Closing
+[01/20/16 09:04:55] [INFO] [pub:14f3a115] New connection from 117.136.78.228:21675
+[01/20/16 09:04:58] [DEBG] [pub:14f3a115] Found hostname www.tunnel.ptwop.xyz in request
+[01/20/16 09:04:58] [INFO] [http://www.tunnel.ptwop.xyz] Got proxy connection pxy:f37399
+[01/20/16 09:04:58] [DEBG] [pxy:f37399] [9c3d1ecd55d3a05198b70f213091d3ff] [http://www.tunnel.ptwop.xyz] Writing message: {"Type":"StartProxy","Payload":{"Url":"http://www.tunnel.ptwop.xyz","ClientAddr":"117.136.78.228:21675"}}
+[01/20/16 09:04:58] [INFO] [pub:14f3a115] Joined with connection pxy:f37399
+[01/20/16 09:04:58] [DEBG] [ctl:27a22a28] [9c3d1ecd55d3a05198b70f213091d3ff] Writing message: {"Type":"ReqProxy","Payload":{}}
+[01/20/16 09:04:58] [INFO] [tun:22c6d173] New connection from 202.110.217.131:36193
+[01/20/16 09:04:58] [DEBG] [tun:22c6d173] Waiting to read message
+[01/20/16 09:04:58] [DEBG] [tun:22c6d173] Reading message with length: 77
+[01/20/16 09:04:58] [DEBG] [tun:22c6d173] Read message {"Type":"RegProxy","Payload":{"ClientId":"9c3d1ecd55d3a05198b70f213091d3ff"}}
+[01/20/16 09:04:58] [INFO] [pxy:22c6d173] Renamed connection tun:22c6d173
+[01/20/16 09:04:58] [INFO] [pxy:22c6d173] Registering new proxy for 9c3d1ecd55d3a05198b70f213091d3ff
+[01/20/16 09:04:58] [INFO] [pxy:22c6d173] [9c3d1ecd55d3a05198b70f213091d3ff] Registered
+[01/20/16 09:04:59] [INFO] [pub:5ce5e4e1] New connection from 117.136.78.228:21679
+[01/20/16 09:04:59] [DEBG] [pub:5ce5e4e1] Found hostname www.tunnel.ptwop.xyz in request
+[01/20/16 09:04:59] [INFO] [http://www.tunnel.ptwop.xyz] Got proxy connection pxy:22c6d173
+[01/20/16 09:04:59] [DEBG] [pxy:22c6d173] [9c3d1ecd55d3a05198b70f213091d3ff] [http://www.tunnel.ptwop.xyz] Writing message: {"Type":"StartProxy","Payload":{"Url":"http://www.tunnel.ptwop.xyz","ClientAddr":"117.136.78.228:21679"}}
+[01/20/16 09:04:59] [INFO] [pub:5ce5e4e1] Joined with connection pxy:22c6d173
+[01/20/16 09:04:59] [DEBG] [ctl:27a22a28] [9c3d1ecd55d3a05198b70f213091d3ff] Writing message: {"Type":"ReqProxy","Payload":{}}
+[01/20/16 09:04:59] [INFO] [tun:6e913741] New connection from 202.110.217.131:36195
+[01/20/16 09:04:59] [DEBG] [tun:6e913741] Waiting to read message
+[01/20/16 09:05:00] [DEBG] [tun:6e913741] Reading message with length: 77
+[01/20/16 09:05:00] [DEBG] [tun:6e913741] Read message {"Type":"RegProxy","Payload":{"ClientId":"9c3d1ecd55d3a05198b70f213091d3ff"}}
+[01/20/16 09:05:00] [INFO] [pxy:6e913741] Renamed connection tun:6e913741
+[01/20/16 09:05:00] [INFO] [pxy:6e913741] Registering new proxy for 9c3d1ecd55d3a05198b70f213091d3ff
+[01/20/16 09:05:00] [INFO] [pxy:6e913741] [9c3d1ecd55d3a05198b70f213091d3ff] Registered
+[01/20/16 09:05:00] [INFO] [pub:53d978f2] New connection from 117.136.78.228:21678
+[01/20/16 09:05:00] [DEBG] [pub:53d978f2] Found hostname www.tunnel.ptwop.xyz in request
+[01/20/16 09:05:00] [INFO] [http://www.tunnel.ptwop.xyz] Got proxy connection pxy:6e913741
+[01/20/16 09:05:00] [DEBG] [pxy:6e913741] [9c3d1ecd55d3a05198b70f213091d3ff] [http://www.tunnel.ptwop.xyz] Writing message: {"Type":"StartProxy","Payload":{"Url":"http://www.tunnel.ptwop.xyz","ClientAddr":"117.136.78.228:21678"}}
+[01/20/16 09:05:00] [DEBG] [ctl:27a22a28] [9c3d1ecd55d3a05198b70f213091d3ff] Writing message: {"Type":"ReqProxy","Payload":{}}
+[01/20/16 09:05:00] [INFO] [pub:53d978f2] Joined with connection pxy:6e913741
+[01/20/16 09:05:00] [INFO] [tun:13543a26] New connection from 202.110.217.131:36197
+[01/20/16 09:05:00] [DEBG] [tun:13543a26] Waiting to read message
+[01/20/16 09:05:01] [DEBG] [tun:13543a26] Reading message with length: 77
+[01/20/16 09:05:01] [DEBG] [tun:13543a26] Read message {"Type":"RegProxy","Payload":{"ClientId":"9c3d1ecd55d3a05198b70f213091d3ff"}}
+[01/20/16 09:05:01] [INFO] [pxy:13543a26] Renamed connection tun:13543a26
+[01/20/16 09:05:01] [INFO] [pxy:13543a26] Registering new proxy for 9c3d1ecd55d3a05198b70f213091d3ff
+[01/20/16 09:05:01] [INFO] [pxy:13543a26] [9c3d1ecd55d3a05198b70f213091d3ff] Registered
+[01/20/16 09:05:04] [DEBG] [pxy:f37399] [9c3d1ecd55d3a05198b70f213091d3ff] [http://www.tunnel.ptwop.xyz] Copied 96240 bytes to pub:14f3a115
+[01/20/16 09:05:04] [DEBG] [pxy:f37399] [9c3d1ecd55d3a05198b70f213091d3ff] [http://www.tunnel.ptwop.xyz] Closing
+[01/20/16 09:05:04] [DEBG] [pub:14f3a115] Closing
+[01/20/16 09:05:04] [DEBG] [pub:14f3a115] Closing
+[01/20/16 09:05:04] [WARN] [pub:14f3a115] Copied 1425 bytes to pxy:f37399 before failing with error read tcp 103.37.3.41:80->117.136.78.228:21675: use of closed network connection
+[01/20/16 09:05:04] [DEBG] [pub:14f3a115] Closing
+[01/20/16 09:05:04] [DEBG] [pub:14f3a115] Closing
+[01/20/16 09:05:04] [DEBG] [pxy:22c6d173] [9c3d1ecd55d3a05198b70f213091d3ff] [http://www.tunnel.ptwop.xyz] Copied 6651 bytes to pub:5ce5e4e1
+[01/20/16 09:05:04] [DEBG] [pxy:22c6d173] [9c3d1ecd55d3a05198b70f213091d3ff] [http://www.tunnel.ptwop.xyz] Closing
+[01/20/16 09:05:04] [DEBG] [pub:5ce5e4e1] Closing
+[01/20/16 09:05:04] [DEBG] [pub:5ce5e4e1] Closing
+[01/20/16 09:05:04] [WARN] [pub:5ce5e4e1] Copied 708 bytes to pxy:22c6d173 before failing with error read tcp 103.37.3.41:80->117.136.78.228:21679: use of closed network connection
+[01/20/16 09:05:04] [DEBG] [pub:5ce5e4e1] Closing
+[01/20/16 09:05:04] [DEBG] [pub:5ce5e4e1] Closing
+[01/20/16 09:05:05] [DEBG] [pxy:6e913741] [9c3d1ecd55d3a05198b70f213091d3ff] [http://www.tunnel.ptwop.xyz] Copied 16753 bytes to pub:53d978f2
+[01/20/16 09:05:05] [DEBG] [pxy:6e913741] [9c3d1ecd55d3a05198b70f213091d3ff] [http://www.tunnel.ptwop.xyz] Closing
+[01/20/16 09:05:05] [DEBG] [pub:53d978f2] Closing
+[01/20/16 09:05:05] [DEBG] [pub:53d978f2] Closing
+[01/20/16 09:05:05] [WARN] [pub:53d978f2] Copied 693 bytes to pxy:6e913741 before failing with error read tcp 103.37.3.41:80->117.136.78.228:21678: use of closed network connection
+[01/20/16 09:05:05] [DEBG] [pub:53d978f2] Closing
+[01/20/16 09:05:05] [DEBG] [pub:53d978f2] Closing
+[01/20/16 09:05:09] [INFO] [pub:76bd50ac] New connection from 117.136.78.228:21680
+[01/20/16 09:05:09] [DEBG] [pub:76bd50ac] Found hostname www.tunnel.ptwop.xyz in request
+[01/20/16 09:05:09] [INFO] [http://www.tunnel.ptwop.xyz] Got proxy connection pxy:13543a26
+[01/20/16 09:05:09] [DEBG] [pxy:13543a26] [9c3d1ecd55d3a05198b70f213091d3ff] [http://www.tunnel.ptwop.xyz] Writing message: {"Type":"StartProxy","Payload":{"Url":"http://www.tunnel.ptwop.xyz","ClientAddr":"117.136.78.228:21680"}}
+[01/20/16 09:05:09] [INFO] [pub:76bd50ac] Joined with connection pxy:13543a26
+[01/20/16 09:05:09] [DEBG] [ctl:27a22a28] [9c3d1ecd55d3a05198b70f213091d3ff] Writing message: {"Type":"ReqProxy","Payload":{}}
+[01/20/16 09:05:10] [INFO] [tun:352618b3] New connection from 202.110.217.131:36199
+[01/20/16 09:05:10] [DEBG] [tun:352618b3] Waiting to read message
+[01/20/16 09:05:10] [DEBG] [tun:352618b3] Reading message with length: 77
+[01/20/16 09:05:10] [DEBG] [tun:352618b3] Read message {"Type":"RegProxy","Payload":{"ClientId":"9c3d1ecd55d3a05198b70f213091d3ff"}}
+[01/20/16 09:05:10] [INFO] [pxy:352618b3] Renamed connection tun:352618b3
+[01/20/16 09:05:10] [INFO] [pxy:352618b3] Registering new proxy for 9c3d1ecd55d3a05198b70f213091d3ff
+[01/20/16 09:05:10] [INFO] [pxy:352618b3] [9c3d1ecd55d3a05198b70f213091d3ff] Registered
+[01/20/16 09:05:21] [DEBG] [pxy:13543a26] [9c3d1ecd55d3a05198b70f213091d3ff] [http://www.tunnel.ptwop.xyz] Copied 833958 bytes to pub:76bd50ac
+[01/20/16 09:05:21] [DEBG] [pxy:13543a26] [9c3d1ecd55d3a05198b70f213091d3ff] [http://www.tunnel.ptwop.xyz] Closing
+[01/20/16 09:05:21] [DEBG] [pub:76bd50ac] Closing
+[01/20/16 09:05:21] [DEBG] [pub:76bd50ac] Closing
+[01/20/16 09:05:21] [WARN] [pub:76bd50ac] Copied 1320 bytes to pxy:13543a26 before failing with error read tcp 103.37.3.41:80->117.136.78.228:21680: use of closed network connection
+[01/20/16 09:05:21] [DEBG] [pub:76bd50ac] Closing
+[01/20/16 09:05:21] [DEBG] [pub:76bd50ac] Closing
+[01/20/16 09:05:22] [INFO] [pub:57438a64] New connection from 117.136.78.228:21681
+[01/20/16 09:05:32] [WARN] [pub:57438a64] Failed to read valid http request: read tcp 103.37.3.41:80->117.136.78.228:21681: i/o timeout
+[01/20/16 09:05:32] [DEBG] [pub:57438a64] Closing
+[01/20/16 09:07:07] [INFO] [ctl:27a22a28] [9c3d1ecd55d3a05198b70f213091d3ff] EOF
+[01/20/16 09:07:07] [INFO] [registry] [ctl] Removed control registry id 9c3d1ecd55d3a05198b70f213091d3ff
+[01/20/16 09:07:07] [DEBG] [ctl:27a22a28] [9c3d1ecd55d3a05198b70f213091d3ff] Closing
+[01/20/16 09:07:07] [INFO] [http://www.tunnel.ptwop.xyz] Shutting down
+[01/20/16 09:07:07] [INFO] [https://www.tunnel.ptwop.xyz] Shutting down
+[01/20/16 09:07:07] [DEBG] [pxy:352618b3] [9c3d1ecd55d3a05198b70f213091d3ff] Closing
+[01/20/16 09:07:07] [INFO] [ctl:27a22a28] [9c3d1ecd55d3a05198b70f213091d3ff] Shutdown complete
+

@@ -1,0 +1,97 @@
+[01/20/16 09:03:04] [INFO] Reading configuration file ngrok.cfg
+[01/20/16 09:03:04] [INFO] [client] Trusting root CAs: [assets/client/tls/ngrokroot.crt]
+[01/20/16 09:03:04] [INFO] Checking for update
+[01/20/16 09:03:06] [INFO] No update available
+[01/20/16 09:03:15] [DEBG] [ctl:41c2e25] New connection to: 103.37.3.41:4443
+[01/20/16 09:03:15] [DEBG] [ctl:41c2e25] Writing message: {"Type":"Auth","Payload":{"Version":"2","MmVersion":"1.7","User":"","Password":"","OS":"linux","Arch":"386","ClientId":""}}
+[01/20/16 09:03:15] [DEBG] [ctl:41c2e25] Waiting to read message
+[01/20/16 09:03:15] [DEBG] [ctl:41c2e25] Reading message with length: 120
+[01/20/16 09:03:15] [DEBG] [ctl:41c2e25] Read message {"Type":"AuthResp","Payload":{"Version":"2","MmVersion":"1.7","ClientId":"9c3d1ecd55d3a05198b70f213091d3ff","Error":""}}
+[01/20/16 09:03:15] [INFO] [client] Authenticated with server, client id: 9c3d1ecd55d3a05198b70f213091d3ff
+[01/20/16 09:03:15] [DEBG] [ctl:41c2e25] Writing message: {"Type":"ReqTunnel","Payload":{"ReqId":"3cd3a36c440aed97","Protocol":"http+https","Hostname":"","Subdomain":"www","HttpAuth":"","RemotePort":0}}
+[01/20/16 09:03:15] [DEBG] [ctl:41c2e25] Waiting to read message
+[01/20/16 09:03:15] [DEBG] [ctl:41c2e25] Reading message with length: 32
+[01/20/16 09:03:15] [DEBG] [ctl:41c2e25] Read message {"Type":"ReqProxy","Payload":{}}
+[01/20/16 09:03:15] [DEBG] [ctl:41c2e25] Waiting to read message
+[01/20/16 09:03:15] [DEBG] [pxy:76c82fb2] New connection to: 103.37.3.41:4443
+[01/20/16 09:03:15] [DEBG] [pxy:76c82fb2] Writing message: {"Type":"RegProxy","Payload":{"ClientId":"9c3d1ecd55d3a05198b70f213091d3ff"}}
+[01/20/16 09:03:15] [DEBG] [ctl:41c2e25] Reading message with length: 124
+[01/20/16 09:03:15] [DEBG] [ctl:41c2e25] Read message {"Type":"NewTunnel","Payload":{"ReqId":"3cd3a36c440aed97","Url":"http://www.tunnel.ptwop.xyz","Protocol":"http","Error":""}}
+[01/20/16 09:03:15] [INFO] [client] Tunnel established at http://www.tunnel.ptwop.xyz
+[01/20/16 09:03:15] [DEBG] [ctl:41c2e25] Waiting to read message
+[01/20/16 09:03:15] [DEBG] [ctl:41c2e25] Reading message with length: 126
+[01/20/16 09:03:15] [DEBG] [ctl:41c2e25] Read message {"Type":"NewTunnel","Payload":{"ReqId":"3cd3a36c440aed97","Url":"https://www.tunnel.ptwop.xyz","Protocol":"https","Error":""}}
+[01/20/16 09:03:15] [INFO] [client] Tunnel established at https://www.tunnel.ptwop.xyz
+[01/20/16 09:03:15] [DEBG] [ctl:41c2e25] Waiting to read message
+[01/20/16 09:03:16] [DEBG] [pxy:76c82fb2] Waiting to read message
+[01/20/16 09:04:12] [DEBG] [pxy:76c82fb2] Reading message with length: 105
+[01/20/16 09:04:12] [DEBG] [pxy:76c82fb2] Read message {"Type":"StartProxy","Payload":{"Url":"http://www.tunnel.ptwop.xyz","ClientAddr":"117.136.78.228:21672"}}
+[01/20/16 09:04:12] [DEBG] [prv:335960bc] New connection to: 127.0.0.1:80
+[01/20/16 09:04:12] [INFO] [prv:335960bc] Joined with connection pxy:76c82fb2
+[01/20/16 09:04:12] [DEBG] [ctl:41c2e25] Reading message with length: 32
+[01/20/16 09:04:12] [DEBG] [ctl:41c2e25] Read message {"Type":"ReqProxy","Payload":{}}
+[01/20/16 09:04:12] [DEBG] [ctl:41c2e25] Waiting to read message
+[01/20/16 09:04:12] [DEBG] [pxy:25e18d3a] New connection to: 103.37.3.41:4443
+[01/20/16 09:04:12] [DEBG] [pxy:25e18d3a] Writing message: {"Type":"RegProxy","Payload":{"ClientId":"9c3d1ecd55d3a05198b70f213091d3ff"}}
+[01/20/16 09:04:13] [DEBG] [pxy:25e18d3a] Waiting to read message
+[01/20/16 09:04:18] [DEBG] [prv:335960bc] Copied 661 bytes to pxy:76c82fb2
+[01/20/16 09:04:18] [DEBG] [prv:335960bc] Closing
+[01/20/16 09:04:18] [DEBG] [pxy:76c82fb2] Closing
+[01/20/16 09:04:18] [WARN] [pxy:76c82fb2] Copied 1238 bytes to prv:335960bc before failing with error read tcp 192.168.60.16:36184->103.37.3.41:4443: use of closed network connection
+[01/20/16 09:04:58] [DEBG] [pxy:25e18d3a] Reading message with length: 105
+[01/20/16 09:04:58] [DEBG] [pxy:25e18d3a] Read message {"Type":"StartProxy","Payload":{"Url":"http://www.tunnel.ptwop.xyz","ClientAddr":"117.136.78.228:21675"}}
+[01/20/16 09:04:58] [DEBG] [prv:6b97a849] New connection to: 127.0.0.1:80
+[01/20/16 09:04:58] [INFO] [prv:6b97a849] Joined with connection pxy:25e18d3a
+[01/20/16 09:04:58] [DEBG] [ctl:41c2e25] Reading message with length: 32
+[01/20/16 09:04:58] [DEBG] [ctl:41c2e25] Read message {"Type":"ReqProxy","Payload":{}}
+[01/20/16 09:04:58] [DEBG] [ctl:41c2e25] Waiting to read message
+[01/20/16 09:04:58] [DEBG] [pxy:63f7a647] New connection to: 103.37.3.41:4443
+[01/20/16 09:04:58] [DEBG] [pxy:63f7a647] Writing message: {"Type":"RegProxy","Payload":{"ClientId":"9c3d1ecd55d3a05198b70f213091d3ff"}}
+[01/20/16 09:04:59] [DEBG] [pxy:63f7a647] Waiting to read message
+[01/20/16 09:04:59] [DEBG] [pxy:63f7a647] Reading message with length: 105
+[01/20/16 09:04:59] [DEBG] [pxy:63f7a647] Read message {"Type":"StartProxy","Payload":{"Url":"http://www.tunnel.ptwop.xyz","ClientAddr":"117.136.78.228:21679"}}
+[01/20/16 09:04:59] [DEBG] [prv:1a97ca36] New connection to: 127.0.0.1:80
+[01/20/16 09:04:59] [INFO] [prv:1a97ca36] Joined with connection pxy:63f7a647
+[01/20/16 09:04:59] [DEBG] [ctl:41c2e25] Reading message with length: 32
+[01/20/16 09:04:59] [DEBG] [ctl:41c2e25] Read message {"Type":"ReqProxy","Payload":{}}
+[01/20/16 09:04:59] [DEBG] [ctl:41c2e25] Waiting to read message
+[01/20/16 09:04:59] [DEBG] [pxy:23387002] New connection to: 103.37.3.41:4443
+[01/20/16 09:04:59] [DEBG] [pxy:23387002] Writing message: {"Type":"RegProxy","Payload":{"ClientId":"9c3d1ecd55d3a05198b70f213091d3ff"}}
+[01/20/16 09:05:00] [DEBG] [pxy:23387002] Waiting to read message
+[01/20/16 09:05:00] [DEBG] [pxy:23387002] Reading message with length: 105
+[01/20/16 09:05:00] [DEBG] [pxy:23387002] Read message {"Type":"StartProxy","Payload":{"Url":"http://www.tunnel.ptwop.xyz","ClientAddr":"117.136.78.228:21678"}}
+[01/20/16 09:05:00] [DEBG] [prv:3b386b15] New connection to: 127.0.0.1:80
+[01/20/16 09:05:00] [INFO] [prv:3b386b15] Joined with connection pxy:23387002
+[01/20/16 09:05:00] [DEBG] [ctl:41c2e25] Reading message with length: 32
+[01/20/16 09:05:00] [DEBG] [ctl:41c2e25] Read message {"Type":"ReqProxy","Payload":{}}
+[01/20/16 09:05:00] [DEBG] [ctl:41c2e25] Waiting to read message
+[01/20/16 09:05:00] [DEBG] [pxy:1ab270fd] New connection to: 103.37.3.41:4443
+[01/20/16 09:05:00] [DEBG] [pxy:1ab270fd] Writing message: {"Type":"RegProxy","Payload":{"ClientId":"9c3d1ecd55d3a05198b70f213091d3ff"}}
+[01/20/16 09:05:01] [DEBG] [pxy:1ab270fd] Waiting to read message
+[01/20/16 09:05:04] [DEBG] [prv:6b97a849] Copied 96240 bytes to pxy:25e18d3a
+[01/20/16 09:05:04] [DEBG] [prv:6b97a849] Closing
+[01/20/16 09:05:04] [DEBG] [pxy:25e18d3a] Closing
+[01/20/16 09:05:04] [WARN] [pxy:25e18d3a] Copied 1425 bytes to prv:6b97a849 before failing with error read tcp 192.168.60.16:36190->103.37.3.41:4443: use of closed network connection
+[01/20/16 09:05:04] [DEBG] [prv:1a97ca36] Copied 6651 bytes to pxy:63f7a647
+[01/20/16 09:05:04] [DEBG] [prv:1a97ca36] Closing
+[01/20/16 09:05:04] [DEBG] [pxy:63f7a647] Closing
+[01/20/16 09:05:04] [WARN] [pxy:63f7a647] Copied 708 bytes to prv:1a97ca36 before failing with error read tcp 192.168.60.16:36193->103.37.3.41:4443: use of closed network connection
+[01/20/16 09:05:05] [DEBG] [prv:3b386b15] Copied 16753 bytes to pxy:23387002
+[01/20/16 09:05:05] [DEBG] [prv:3b386b15] Closing
+[01/20/16 09:05:05] [DEBG] [pxy:23387002] Closing
+[01/20/16 09:05:05] [WARN] [pxy:23387002] Copied 693 bytes to prv:3b386b15 before failing with error read tcp 192.168.60.16:36195->103.37.3.41:4443: use of closed network connection
+[01/20/16 09:05:10] [DEBG] [pxy:1ab270fd] Reading message with length: 105
+[01/20/16 09:05:10] [DEBG] [pxy:1ab270fd] Read message {"Type":"StartProxy","Payload":{"Url":"http://www.tunnel.ptwop.xyz","ClientAddr":"117.136.78.228:21680"}}
+[01/20/16 09:05:10] [DEBG] [prv:34f37d93] New connection to: 127.0.0.1:80
+[01/20/16 09:05:10] [INFO] [prv:34f37d93] Joined with connection pxy:1ab270fd
+[01/20/16 09:05:10] [DEBG] [ctl:41c2e25] Reading message with length: 32
+[01/20/16 09:05:10] [DEBG] [ctl:41c2e25] Read message {"Type":"ReqProxy","Payload":{}}
+[01/20/16 09:05:10] [DEBG] [ctl:41c2e25] Waiting to read message
+[01/20/16 09:05:10] [DEBG] [pxy:5d540446] New connection to: 103.37.3.41:4443
+[01/20/16 09:05:10] [DEBG] [pxy:5d540446] Writing message: {"Type":"RegProxy","Payload":{"ClientId":"9c3d1ecd55d3a05198b70f213091d3ff"}}
+[01/20/16 09:05:10] [DEBG] [pxy:5d540446] Waiting to read message
+[01/20/16 09:05:19] [DEBG] [prv:34f37d93] Copied 833958 bytes to pxy:1ab270fd
+[01/20/16 09:05:19] [DEBG] [prv:34f37d93] Closing
+[01/20/16 09:05:19] [DEBG] [pxy:1ab270fd] Closing
+[01/20/16 09:05:19] [WARN] [pxy:1ab270fd] Copied 1320 bytes to prv:34f37d93 before failing with error read tcp 192.168.60.16:36197->103.37.3.41:4443: use of closed network connection
+

@@ -1,0 +1,6 @@
+#!/bin/sh
+cd /home/wang/bin/server
+./rndb
+sleep 5
+cd /home/wang/bin/client
+./rnb

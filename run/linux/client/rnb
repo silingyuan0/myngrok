@@ -1,0 +1,3 @@
+#!/bin/sh
+rm -fv nohup.out
+nohup ./ngrok  -log="none" -log-level="ERROR" -config=ngrok.cfg start http &

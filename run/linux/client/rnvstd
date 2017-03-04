@@ -1,0 +1,2 @@
+#!/bin/sh
+./ngrok -log="stdout" -log-level="DEBUG" -config=ngrok.cfg start http

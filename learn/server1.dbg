@@ -1,0 +1,92 @@
+[01/18/16 11:20:10] [INFO] [metrics] Reporting every 30 seconds
+[01/18/16 11:20:10] [INFO] [registry] [tun] No affinity cache specified
+[01/18/16 11:20:10] [INFO] Listening for public http connections on [::]:80
+[01/18/16 11:20:10] [INFO] Listening for public https connections on [::]:443
+[01/18/16 11:20:10] [INFO] Listening for control and proxy connections on [::]:4443
+[01/18/16 11:20:40] [INFO] [metrics] Reporting: {"bytesIn.count":0,"bytesOut.count":0,"connMeter.count":0,"connMeter.m1":0,"httpTunnelMeter.count":0,"linux":0,"osx":0,"other":0,"tcpTunnelMeter.count":0,"tunnelMeter.count":0,"tunnelMeter.m1":0,"windows":0}
+[01/18/16 11:21:10] [INFO] [metrics] Reporting: {"bytesIn.count":0,"bytesOut.count":0,"connMeter.count":0,"connMeter.m1":0,"httpTunnelMeter.count":0,"linux":0,"osx":0,"other":0,"tcpTunnelMeter.count":0,"tunnelMeter.count":0,"tunnelMeter.m1":0,"windows":0}
+
+开始建立隧道链接
+
+[01/18/16 11:21:13] [INFO] [tun:613f4374] New connection from 202.110.217.131:50355
+[01/18/16 11:21:13] [DEBG] [tun:613f4374] Waiting to read message
+[01/18/16 11:21:13] [DEBG] [tun:613f4374] Reading message with length: 123
+[01/18/16 11:21:13] [DEBG] [tun:613f4374] Read message {"Type":"Auth","Payload":{"Version":"2","MmVersion":"1.7","User":"","Password":"","OS":"linux","Arch":"386","ClientId":""}}
+[01/18/16 11:21:13] [INFO] [ctl:613f4374] Renamed connection tun:613f4374
+[01/18/16 11:21:13] [INFO] [registry] [ctl] Registered control with id 4a5b4eba4c141d610d157f69c9f11971
+[01/18/16 11:21:13] [DEBG] [ctl:613f4374] [4a5b4eba4c141d610d157f69c9f11971] Writing message: {"Type":"AuthResp","Payload":{"Version":"2","MmVersion":"1.7","ClientId":"4a5b4eba4c141d610d157f69c9f11971","Error":""}}
+[01/18/16 11:21:13] [DEBG] [ctl:613f4374] [4a5b4eba4c141d610d157f69c9f11971] Writing message: {"Type":"ReqProxy","Payload":{}}
+[01/18/16 11:21:13] [DEBG] [ctl:613f4374] [4a5b4eba4c141d610d157f69c9f11971] Waiting to read message
+[01/18/16 11:21:13] [DEBG] [ctl:613f4374] [4a5b4eba4c141d610d157f69c9f11971] Reading message with length: 144
+[01/18/16 11:21:13] [DEBG] [ctl:613f4374] [4a5b4eba4c141d610d157f69c9f11971] Read message {"Type":"ReqTunnel","Payload":{"ReqId":"b075108389ecc37e","Protocol":"http+https","Hostname":"","Subdomain":"www","HttpAuth":"","RemotePort":0}}
+[01/18/16 11:21:13] [DEBG] [ctl:613f4374] [4a5b4eba4c141d610d157f69c9f11971] Waiting to read message
+[01/18/16 11:21:13] [DEBG] [ctl:613f4374] [4a5b4eba4c141d610d157f69c9f11971] Registering new tunnel
+[01/18/16 11:21:13] [INFO] [http://www.tunnel.ptwop.xyz] Registered new tunnel on: ctl:613f4374
+[01/18/16 11:21:13] [DEBG] [ctl:613f4374] [4a5b4eba4c141d610d157f69c9f11971] Registering new tunnel
+[01/18/16 11:21:13] [INFO] [https://www.tunnel.ptwop.xyz] Registered new tunnel on: ctl:613f4374
+[01/18/16 11:21:13] [DEBG] [ctl:613f4374] [4a5b4eba4c141d610d157f69c9f11971] Writing message: {"Type":"NewTunnel","Payload":{"ReqId":"b075108389ecc37e","Url":"http://www.tunnel.ptwop.xyz","Protocol":"http","Error":""}}
+[01/18/16 11:21:13] [DEBG] [ctl:613f4374] [4a5b4eba4c141d610d157f69c9f11971] Writing message: {"Type":"NewTunnel","Payload":{"ReqId":"b075108389ecc37e","Url":"https://www.tunnel.ptwop.xyz","Protocol":"https","Error":""}}
+[01/18/16 11:21:14] [INFO] [tun:5b9bcb5f] New connection from 202.110.217.131:50357
+[01/18/16 11:21:14] [DEBG] [tun:5b9bcb5f] Waiting to read message
+[01/18/16 11:21:14] [DEBG] [tun:5b9bcb5f] Reading message with length: 77
+[01/18/16 11:21:14] [DEBG] [tun:5b9bcb5f] Read message {"Type":"RegProxy","Payload":{"ClientId":"4a5b4eba4c141d610d157f69c9f11971"}}
+[01/18/16 11:21:14] [INFO] [pxy:5b9bcb5f] Renamed connection tun:5b9bcb5f
+[01/18/16 11:21:14] [INFO] [pxy:5b9bcb5f] Registering new proxy for 4a5b4eba4c141d610d157f69c9f11971
+[01/18/16 11:21:14] [INFO] [pxy:5b9bcb5f] [4a5b4eba4c141d610d157f69c9f11971] Registered
+
+隧道建立完成
+
+[01/18/16 11:21:33] [DEBG] [ctl:613f4374] [4a5b4eba4c141d610d157f69c9f11971] Reading message with length: 28
+[01/18/16 11:21:33] [DEBG] [ctl:613f4374] [4a5b4eba4c141d610d157f69c9f11971] Read message {"Type":"Ping","Payload":{}}
+[01/18/16 11:21:33] [DEBG] [ctl:613f4374] [4a5b4eba4c141d610d157f69c9f11971] Waiting to read message
+[01/18/16 11:21:33] [DEBG] [ctl:613f4374] [4a5b4eba4c141d610d157f69c9f11971] Writing message: {"Type":"Pong","Payload":{}}
+[01/18/16 11:21:40] [INFO] [metrics] Reporting: {"bytesIn.count":0,"bytesOut.count":0,"connMeter.count":0,"connMeter.m1":0,"httpTunnelMeter.count":1,"linux":2,"osx":0,"other":0,"tcpTunnelMeter.count":0,"tunnelMeter.count":2,"tunnelMeter.m1":0.021083988195124116,"windows":0}
+
+开始外部访问
+
+[01/18/16 11:21:41] [INFO] [pub:3f70e4e6] New connection from 117.136.92.55:18669
+[01/18/16 11:21:42] [DEBG] [pub:3f70e4e6] Found hostname www.tunnel.ptwop.xyz in request
+[01/18/16 11:21:42] [INFO] [http://www.tunnel.ptwop.xyz] Got proxy connection pxy:5b9bcb5f
+[01/18/16 11:21:42] [DEBG] [pxy:5b9bcb5f] [4a5b4eba4c141d610d157f69c9f11971] [http://www.tunnel.ptwop.xyz] Writing message: {"Type":"StartProxy","Payload":{"Url":"http://www.tunnel.ptwop.xyz","ClientAddr":"117.136.92.55:18669"}}
+[01/18/16 11:21:42] [INFO] [pub:3f70e4e6] Joined with connection pxy:5b9bcb5f
+[01/18/16 11:21:42] [DEBG] [ctl:613f4374] [4a5b4eba4c141d610d157f69c9f11971] Writing message: {"Type":"ReqProxy","Payload":{}}
+[01/18/16 11:21:42] [INFO] [pub:16a223c2] New connection from 117.136.92.55:18670
+[01/18/16 11:21:42] [INFO] [tun:6da829c5] New connection from 202.110.217.131:50359
+[01/18/16 11:21:42] [DEBG] [tun:6da829c5] Waiting to read message
+[01/18/16 11:21:43] [DEBG] [tun:6da829c5] Reading message with length: 77
+[01/18/16 11:21:43] [DEBG] [tun:6da829c5] Read message {"Type":"RegProxy","Payload":{"ClientId":"4a5b4eba4c141d610d157f69c9f11971"}}
+[01/18/16 11:21:43] [INFO] [pxy:6da829c5] Renamed connection tun:6da829c5
+[01/18/16 11:21:43] [INFO] [pxy:6da829c5] Registering new proxy for 4a5b4eba4c141d610d157f69c9f11971
+[01/18/16 11:21:43] [INFO] [pxy:6da829c5] [4a5b4eba4c141d610d157f69c9f11971] Registered
+[01/18/16 11:21:47] [DEBG] [pxy:5b9bcb5f] [4a5b4eba4c141d610d157f69c9f11971] [http://www.tunnel.ptwop.xyz] Copied 661 bytes to pub:3f70e4e6
+[01/18/16 11:21:47] [DEBG] [pxy:5b9bcb5f] [4a5b4eba4c141d610d157f69c9f11971] [http://www.tunnel.ptwop.xyz] Closing
+[01/18/16 11:21:47] [DEBG] [pub:3f70e4e6] Closing
+[01/18/16 11:21:47] [DEBG] [pub:3f70e4e6] Closing
+[01/18/16 11:21:47] [WARN] [pub:3f70e4e6] Copied 1238 bytes to pxy:5b9bcb5f before failing with error read tcp 103.37.3.41:80->117.136.92.55:18669: use of closed network connection
+[01/18/16 11:21:47] [DEBG] [pub:3f70e4e6] Closing
+[01/18/16 11:21:47] [DEBG] [pub:3f70e4e6] Closing
+[01/18/16 11:21:52] [WARN] [pub:16a223c2] Failed to read valid http request: read tcp 103.37.3.41:80->117.136.92.55:18670: i/o timeout
+[01/18/16 11:21:52] [DEBG] [pub:16a223c2] Closing
+
+访问结束
+
+[01/18/16 11:21:53] [DEBG] [ctl:613f4374] [4a5b4eba4c141d610d157f69c9f11971] Reading message with length: 28
+[01/18/16 11:21:53] [DEBG] [ctl:613f4374] [4a5b4eba4c141d610d157f69c9f11971] Read message {"Type":"Ping","Payload":{}}
+[01/18/16 11:21:53] [DEBG] [ctl:613f4374] [4a5b4eba4c141d610d157f69c9f11971] Waiting to read message
+[01/18/16 11:21:53] [DEBG] [ctl:613f4374] [4a5b4eba4c141d610d157f69c9f11971] Writing message: {"Type":"Pong","Payload":{}}
+[01/18/16 11:21:55] [INFO] [pub:5b800c77] New connection from 117.136.92.55:18671
+[01/18/16 11:22:05] [WARN] [pub:5b800c77] Failed to read valid http request: read tcp 103.37.3.41:80->117.136.92.55:18671: i/o timeout
+[01/18/16 11:22:05] [DEBG] [pub:5b800c77] Closing
+[01/18/16 11:22:10] [INFO] [metrics] Reporting: {"bytesIn.count":661,"bytesOut.count":1238,"connMeter.count":1,"connMeter.m1":0.010541994097562058,"httpTunnelMeter.count":1,"linux":2,"osx":0,"other":0,"tcpTunnelMeter.count":0,"tunnelMeter.count":2,"tunnelMeter.m1":0.01278808526936201,"windows":0}
+[01/18/16 11:22:13] [DEBG] [ctl:613f4374] [4a5b4eba4c141d610d157f69c9f11971] Reading message with length: 28
+[01/18/16 11:22:13] [DEBG] [ctl:613f4374] [4a5b4eba4c141d610d157f69c9f11971] Read message {"Type":"Ping","Payload":{}}
+[01/18/16 11:22:13] [DEBG] [ctl:613f4374] [4a5b4eba4c141d610d157f69c9f11971] Waiting to read message
+[01/18/16 11:22:13] [DEBG] [ctl:613f4374] [4a5b4eba4c141d610d157f69c9f11971] Writing message: {"Type":"Pong","Payload":{}}
+[01/18/16 11:22:18] [INFO] [ctl:613f4374] [4a5b4eba4c141d610d157f69c9f11971] EOF
+[01/18/16 11:22:18] [INFO] [registry] [ctl] Removed control registry id 4a5b4eba4c141d610d157f69c9f11971
+[01/18/16 11:22:18] [DEBG] [ctl:613f4374] [4a5b4eba4c141d610d157f69c9f11971] Closing
+[01/18/16 11:22:18] [INFO] [http://www.tunnel.ptwop.xyz] Shutting down
+[01/18/16 11:22:18] [INFO] [https://www.tunnel.ptwop.xyz] Shutting down
+[01/18/16 11:22:18] [DEBG] [pxy:6da829c5] [4a5b4eba4c141d610d157f69c9f11971] Closing
+[01/18/16 11:22:18] [INFO] [ctl:613f4374] [4a5b4eba4c141d610d157f69c9f11971] Shutdown complete
+
