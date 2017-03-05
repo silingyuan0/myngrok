@@ -16,8 +16,6 @@
 // assets/client/tls/snakeoilca.crt
 // DO NOT EDIT!
 
-// +build release
-
 package assets
 
 import (
@@ -98,7 +96,7 @@ func assetsClientPageHtml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/client/page.html", size: 7256, mode: os.FileMode(436), modTime: time.Unix(1453789946, 0)}
+	info := bindataFileInfo{name: "assets/client/page.html", size: 7256, mode: os.FileMode(436), modTime: time.Unix(1488629848, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -118,7 +116,7 @@ func assetsClientStaticCssBootstrapMinCss() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/client/static/css/bootstrap.min.css", size: 126456, mode: os.FileMode(436), modTime: time.Unix(1453789946, 0)}
+	info := bindataFileInfo{name: "assets/client/static/css/bootstrap.min.css", size: 126456, mode: os.FileMode(436), modTime: time.Unix(1488629848, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -138,7 +136,7 @@ func assetsClientStaticCssHighlightMinCss() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/client/static/css/highlight.min.css", size: 1860, mode: os.FileMode(436), modTime: time.Unix(1453789946, 0)}
+	info := bindataFileInfo{name: "assets/client/static/css/highlight.min.css", size: 1860, mode: os.FileMode(436), modTime: time.Unix(1488629848, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -158,7 +156,7 @@ func assetsClientStaticImgGlyphiconsHalflingsPng() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/client/static/img/glyphicons-halflings.png", size: 12799, mode: os.FileMode(436), modTime: time.Unix(1453789946, 0)}
+	info := bindataFileInfo{name: "assets/client/static/img/glyphicons-halflings.png", size: 12799, mode: os.FileMode(436), modTime: time.Unix(1488629848, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -178,7 +176,7 @@ func assetsClientStaticJsAngularSanitizeMinJs() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/client/static/js/angular-sanitize.min.js", size: 3929, mode: os.FileMode(436), modTime: time.Unix(1453789946, 0)}
+	info := bindataFileInfo{name: "assets/client/static/js/angular-sanitize.min.js", size: 3929, mode: os.FileMode(436), modTime: time.Unix(1488629848, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -198,7 +196,7 @@ func assetsClientStaticJsAngularJs() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/client/static/js/angular.js", size: 88802, mode: os.FileMode(436), modTime: time.Unix(1453789946, 0)}
+	info := bindataFileInfo{name: "assets/client/static/js/angular.js", size: 88802, mode: os.FileMode(436), modTime: time.Unix(1488629848, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -218,7 +216,7 @@ func assetsClientStaticJsBase64Js() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/client/static/js/base64.js", size: 6206, mode: os.FileMode(436), modTime: time.Unix(1453789946, 0)}
+	info := bindataFileInfo{name: "assets/client/static/js/base64.js", size: 6206, mode: os.FileMode(436), modTime: time.Unix(1488629848, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -238,7 +236,7 @@ func assetsClientStaticJsHighlightMinJs() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/client/static/js/highlight.min.js", size: 22562, mode: os.FileMode(436), modTime: time.Unix(1453789946, 0)}
+	info := bindataFileInfo{name: "assets/client/static/js/highlight.min.js", size: 22562, mode: os.FileMode(436), modTime: time.Unix(1488629848, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -258,7 +256,7 @@ func assetsClientStaticJsJquery191MinJs() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/client/static/js/jquery-1.9.1.min.js", size: 92629, mode: os.FileMode(436), modTime: time.Unix(1453789946, 0)}
+	info := bindataFileInfo{name: "assets/client/static/js/jquery-1.9.1.min.js", size: 92629, mode: os.FileMode(436), modTime: time.Unix(1488629848, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -278,7 +276,7 @@ func assetsClientStaticJsJqueryTimeagoJs() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/client/static/js/jquery.timeago.js", size: 6111, mode: os.FileMode(436), modTime: time.Unix(1453789946, 0)}
+	info := bindataFileInfo{name: "assets/client/static/js/jquery.timeago.js", size: 6111, mode: os.FileMode(436), modTime: time.Unix(1488629848, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -298,7 +296,7 @@ func assetsClientStaticJsNgrokJs() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/client/static/js/ngrok.js", size: 11600, mode: os.FileMode(436), modTime: time.Unix(1453789946, 0)}
+	info := bindataFileInfo{name: "assets/client/static/js/ngrok.js", size: 11600, mode: os.FileMode(436), modTime: time.Unix(1488629848, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -318,12 +316,12 @@ func assetsClientStaticJsVkbeautifyJs() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/client/static/js/vkbeautify.js", size: 10111, mode: os.FileMode(436), modTime: time.Unix(1453789946, 0)}
+	info := bindataFileInfo{name: "assets/client/static/js/vkbeautify.js", size: 10111, mode: os.FileMode(436), modTime: time.Unix(1488629848, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
-var _assetsClientTlsNgrokrootCrt = "\x1f\x8b\x08\x00\x00\x09\x6e\x88\x00\xff\x64\x94\x49\xb3\xaa\x38\x00\x85\xf7\xfc\x8a\xde\x5b\x5d\x06\x19\x84\xc5\x5b\x24\xcc\x08\x48\x98\x14\x76\x44\x04\x04\xc4\x87\x0c\x41\x7e\x7d\xdf\x7b\xab\x37\xaf\x3b\xab\xd4\x57\xdf\x22\x55\xe7\xe4\xfc\xfd\x7d\x90\x66\x58\xde\x5f\x8a\x16\x44\x96\x6e\x29\x30\xd2\x7e\x28\xe3\x5a\x96\xaa\x44\x8a\x02\x4b\xa3\x82\xd4\x42\xb0\xb2\x6c\xe8\x1a\xfa\x4e\xbe\xd8\xfb\xf8\x34\xb8\x10\x18\x4a\x38\x18\xa1\x45\x38\x15\x6b\x08\xe1\x18\xba\x68\x5c\x8d\x08\x5e\x51\xe5\x25\x0c\x82\xae\xab\x99\x01\x4b\x9e\x42\x47\x14\x81\x16\x66\xb1\xdc\x14\x81\xbf\x5f\x5f\xd4\xac\x6f\x9e\x1b\xdd\xa8\xbb\x41\xe0\xaa\xed\xc7\x8b\x5c\xee\xf2\xcd\x36\xb8\xba\x91\xb6\x7e\x33\xe6\x07\x36\x90\xb8\x41\x4b\x75\x9a\xaa\x09\xc6\xaa\x8a\x10\x28\x2e\xc2\x9c\x5d\xe8\x7c\x33\x03\x8e\x70\x70\xbe\x9b\x9d\xf8\xf5\x5a\x64\x35\xd0\x43\x55\x3b\xd4\xed\xc3\x90\x29\x40\x0c\xc4\x9a\x0e\xe1\x59\x81\x58\x82\xdf\x82\x52\x9d\xbe\xee\x1a\x3c\x20\xba\x4f\x44\x0b\x64\x28\x3c\xb1\xe7\xd8\x95\x26\x77\x0c\x0f\x97\xad\x37\x80\xfa\xb4\x2a\xf6\x2a\x34\x7d\xfe\xbb\xbd\x33\xa4\x3b\x1f\x03\x12\x0b\x44\xcf\x96\xd5\x2a\xca\x8f\x76\x3f\x35\x72\x86\xe2\xcf\xeb\xbe\x0c\x52\x23\x4d\x7e\x97\xf5\xcb\x91\xcc\x79\x74\xeb\xe1\x6b\x15\x3e\x29\xb0\x16\x13\x9e\xa1\x34\x0a\x2a\xcf\xec\x01\x6f\x76\xb5\x92\xdd\x97\xf3\x68\xd8\x33\xaa\xb3\x31\x85\xdb\x9b\xd0\xc2\xef\x1a\x74\x78\x08\x4b\x96\xa4\x12\xd5\xc3\x74\x0f\xc0\x4a\x7a\xa9\xd9\x9f\xb6\x4f\x47\xfa\x8b\xb4\x35\xad\x90\x32\xac\xec\x9d\xcd\x79\x38\x89\x1e\xdb\xdd\x07\x5a\x9a\xc6\x23\xf7\x7d\x18\xad\xb6\x31\xf0\x4d\x00\x6d\xd1\xed\x01\x3e\xaf\xc5\x9c\x2c\x5a\xd6\x56\x58\x04\x28\x94\xb3\x03\xb2\x23\x12\xad\x6a\xc6\xd4\x13\x16\x6c\x6d\xa9\x5a\xd3\x14\x92\x2d\x91\xb4\x29\xfc\xa4\xc2\xd3\x88\x13\xf5\x5c\x29\x04\x84\x1b\x97\xe9\x9c\x77\xb3\x4f\xe0\x10\x9a\xea\x7a\xb0\xf7\x41\xa4\x4b\x27\x30\xaf\x13\xed\xe7\x8e\x31\xde\x6c\xdb\xf9\x7c\x9d\xe0\xd9\x1d\xfd\x2d\xcd\x51\xde\xec\x14\x55\xb9\xd5\x3a\x94\x92\x5d\x9e\x13\x1c\x57\x55\x91\x6c\xd7\xc9\x76\xb0\xa5\x42\x0c\xd1\x8b\x85\x34\x6a\x60\xf1\xd3\x03\x13\xf3\x9a\x5e\xe1\xd8\x4a\xb4\x03\xb7\x3b\x36\xce\xfa\x92\x6f\x2f\xe1\xcd\x6e\xc5\xd8\xd9\x8f\xfc\xe3\x03\x6a\x7e\xc7\x1b\x80\x06\xa1\x8a\xea\x2f\xf8\x87\xcb\xfc\x57\x56\xe1\x8f\x1c\x21\x18\x53\x48\x35\xb4\xdf\xfe\xcc\x1d\xe2\xf8\xdf\xd8\x35\xe8\xa9\xa2\xcd\x9c\xb9\x4f\xba\xef\xf9\x41\xb8\xeb\xd1\x35\x39\x67\xfc\x88\xca\x30\xef\x12\xd7\xf4\xdc\xbb\xed\xe3\x96\x73\x66\xd1\x6b\x1c\x34\xe6\xf3\x2e\x2c\xfc\xe6\xf4\x6e\x17\x89\x57\xfa\xb4\xcd\xd8\x66\x9e\x98\xce\x8b\x27\xac\xe6\x87\x27\x19\x8b\xcd\x79\x4a\x7d\x98\x5b\xde\xa1\xe1\xed\x5b\xb9\x04\xe6\x54\x9e\xad\xaa\x6e\x8a\xf7\x71\xcc\x25\xd4\xb7\xb8\xb1\x02\x71\x9d\x60\xf8\xc4\x65\x69\xc8\xa3\xd3\x31\xd3\x24\xf0\x36\x0f\x88\xbc\xb9\x5b\x75\x63\x15\xda\xc7\xce\xdb\xef\x56\xe0\x93\xab\xdc\xaf\xab\xa8\xea\xf2\x91\xa3\x81\x14\x48\xaf\x39\xd9\x0d\xba\x9a\x5e\xc5\xed\x49\xa2\x30\x1b\x9f\xc9\x53\x61\x34\xa1\xbc\x54\x37\xa7\x0a\xbd\xe9\xb1\xc0\x44\x68\x8f\x3c\x34\x9a\x2b\x91\x44\xf0\xdb\x9a\xcb\xb1\x8a\x39\x51\xa8\xab\xbb\x10\xfb\x8e\x21\x63\xa0\x3b\xeb\x68\x25\xae\xa1\x38\xbc\xe8\x10\x7a\x61\xec\xaf\xaf\x1d\x4a\x9f\x8f\xeb\xcf\x2c\xf2\xc5\x1d\xcd\xaf\xb8\x73\xc6\xdf\x52\xf7\xac\x1d\x2d\x35\x80\x54\x0a\xb3\xe9\x42\xf8\xd5\xd0\x63\x79\x8c\x02\x2c\x83\x81\x3c\xf8\xa1\xf2\x24\x13\x8f\x3c\xe3\x8d\x29\xa0\x3c\x9b\x9c\x86\xc7\xa4\x88\x35\x87\xaa\x5f\xbf\x98\x9f\xa9\xd0\x3c\xf5\xff\xf3\xf1\x4f\x00\x00\x00\xff\xff\xaa\x88\x92\x59\x5b\x04\x00\x00"
+var _assetsClientTlsNgrokrootCrt = "\x1f\x8b\x08\x00\x00\x09\x6e\x88\x00\xff\x64\x94\xb9\x92\xb3\x3a\x1a\x86\x73\xae\x62\x72\xd7\x14\x60\x03\x86\xe0\x0f\x24\xb1\x1b\x61\x16\x61\x63\x32\xb3\x37\x06\x83\x59\x2c\xcc\xd5\x4f\x77\xd7\x24\xff\x39\x8a\x54\x4f\x3d\x81\x54\xef\xf7\xbd\xff\xfd\x39\x50\x33\x2c\xf7\x3f\x48\x0b\x88\xa5\x5b\x08\x10\xed\x97\x32\xd8\xb2\x54\x44\x10\x02\xa5\x51\x01\x6a\x41\x50\x59\x36\xc0\xe2\xec\xae\xbb\x9e\xb8\x56\x89\x01\x67\xa0\xf0\x65\x84\x56\x7a\x50\x7d\x0d\x22\x1a\x01\x0c\xa7\xd5\x20\x20\x86\x95\x7b\x61\x20\xc0\x58\x33\x03\x3e\xed\xc4\x36\x45\x22\xcd\xcd\xfc\x9d\x21\x51\x28\xe2\x9e\x9a\x75\xe6\x62\x92\x51\xbc\x01\x0e\x13\x7f\xc5\x9b\xb5\x5d\x7f\xd8\x06\x56\x4c\xb4\xf5\x87\x31\xbf\xb0\x01\x29\x0e\x1e\x54\xa7\x37\xf5\xe2\xfb\xaa\x0a\x21\x97\x5f\xc5\x25\xb9\xd2\x25\x33\x83\x43\x7a\x00\x4b\x61\xb6\xd2\xf7\x6b\xa1\xd5\x00\x17\x56\x8f\x57\xfd\xf8\x32\x14\xca\x41\x06\xf8\x9a\x0e\xc0\x19\x01\x5f\x06\x3f\x02\xaa\x4e\xdf\x77\x0d\x70\x7d\xb0\x3d\x90\xa0\x29\xe4\xc5\xcd\xcb\x7e\x83\x02\x14\x88\x56\x3e\xc7\x57\x45\xea\x59\x28\x06\x71\x88\x51\x9d\x07\x8c\xd9\xde\x95\x59\x6f\xfa\x6d\x43\x4b\x42\xd9\x18\x5c\xf3\xbd\x98\xd3\x8f\x17\x20\xaa\xbc\x43\xec\x86\x5d\x5d\xce\x39\xea\xac\x80\xf5\xbc\x70\x4c\xf6\x6f\xad\x5c\x8d\x89\xb0\x4e\xce\x4b\x1e\x66\x7a\xfd\xeb\x24\x8b\xbd\xf5\x5e\xfb\xd9\xa9\x56\xe7\xc0\xad\x6a\xdc\x66\x4a\x20\x4d\x33\xdb\x9e\x2e\x5b\x2e\x7d\xbc\xd1\x46\x67\xbb\x42\xbb\xb7\xb4\x54\xcd\x76\x20\xd9\x76\xcb\xcf\x28\xd6\x9c\x73\xca\x8c\x75\x50\x5f\x6a\xd9\x03\xa3\xb2\xec\xb2\x83\x3d\x5d\xd3\x1b\xf0\xb9\xd9\x6e\xa5\x74\x0f\x62\xf1\x43\xa6\xf4\xed\x29\xe9\x57\x96\xac\xc8\x76\x8a\x1d\xcf\xa9\xb8\x03\xf3\x69\x5d\x83\xcb\xd7\x84\x99\x3b\xb7\xbf\x35\x7d\x2a\xf2\x12\x2e\x8c\x5d\xc8\x57\x91\x76\x6f\x6c\x3b\x4a\xe8\x45\x6e\xb3\xf6\x99\x5a\x65\x18\x2b\x1f\x82\xc7\x20\x7c\xee\xb1\x2f\x90\x78\xdb\x4d\x51\x35\xe4\xae\x8c\xbc\x37\xcb\x18\x00\x4a\x85\xc9\xb5\x46\xbd\x6e\x5d\xd8\x7d\x1a\x37\xe4\x14\xf9\xc3\xea\xc7\xd2\x68\xe4\x29\x22\x03\x2e\x65\x05\xe9\xc8\xa1\xcf\xc6\xb7\x54\xe0\x03\xd8\xf3\x80\x92\x06\xe4\xbf\x73\x60\xfa\x82\xa6\x57\x7e\x94\x6c\x8f\x52\x0a\xa6\x26\xd8\x5f\xf5\xa3\x61\x93\xac\xf9\x4c\x51\x34\xe0\x62\x10\xa8\xf9\x13\x6f\xc0\x35\x10\x56\x54\xef\xc1\x5f\x2e\xf3\x4f\x59\x05\xbf\x32\x81\x20\xa2\x80\x6a\x90\xdd\xfe\xce\x1d\xf8\xd3\xff\x63\xd7\x00\xe1\xdb\x2b\x23\xe8\xce\xbb\xe9\xe6\xf9\xf8\x06\xf9\xc3\x13\x03\x61\x58\x13\xd6\xed\x43\x3e\x90\xe3\x95\xac\xf7\xae\xe8\xd6\x82\x54\xea\xc0\x3d\xc6\x92\x3d\x5a\x45\x1e\x44\xe5\xc4\x3a\xce\xa7\xe8\x2a\x24\x24\x8c\x35\x50\xf6\x5e\x6b\x1e\xa8\xea\x73\x74\x1e\xa6\x6c\x3a\xaa\x42\x71\x93\xf2\x53\xb0\xb9\xc6\xb8\x3a\xfe\x4d\x37\xc4\xe9\x58\x3e\xd0\xe2\x59\x27\x37\xb7\xb3\x14\x1b\x5d\x54\xa0\x79\x57\x1c\xfc\x85\x39\x3d\xd2\x5c\xb8\x6d\xd9\x56\x4a\xfa\xae\x9c\x66\xf1\xe0\xb3\xa7\xdd\x35\xb1\xec\x93\xfd\xe5\xb8\x93\xf0\xd0\x9b\x76\xbc\x84\x6e\x0e\xf9\xe2\xd0\x17\x57\x7c\x6b\x88\xa1\x7c\x8b\xd5\x62\xe6\xf0\xcc\xd4\x4a\x86\x38\x3c\x24\x2f\x8d\x6a\xf7\xd7\x1c\x3f\xcd\x04\x7f\xa4\xbc\x3d\xe2\x6c\xd8\xf6\x62\xc2\xc6\x14\x9c\x8f\xe2\xee\xa3\xbd\xce\x94\xe7\xbd\x89\x9b\x8a\xfd\x32\x3a\xc3\x7d\x74\xc3\x6c\x57\x30\x96\x41\x3d\xfa\xbd\x89\x95\x9e\x5b\x52\x79\xeb\x2a\x7c\x04\xc6\x15\x78\xad\xd9\xba\xea\xf7\x2f\xcb\x44\x99\xfa\xe8\xd0\x2c\xd9\x00\xa7\x92\xef\x65\x55\xac\x9d\xe4\x55\x57\xb5\x27\x0e\x29\x1c\x99\xe8\xe9\x50\xcd\xb9\xc8\xc3\x69\xc3\x2e\x7d\xdb\x53\xf5\xe7\x0f\xf3\x5b\x15\x9a\xab\xfe\xbb\x3e\xfe\x17\x00\x00\xff\xff\xe3\xd5\x2f\x2b\x5b\x04\x00\x00"
 
 func assetsClientTlsNgrokrootCrtBytes() ([]byte, error) {
 	return bindataRead(
@@ -338,7 +336,7 @@ func assetsClientTlsNgrokrootCrt() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/client/tls/ngrokroot.crt", size: 1115, mode: os.FileMode(436), modTime: time.Unix(1488619537, 0)}
+	info := bindataFileInfo{name: "assets/client/tls/ngrokroot.crt", size: 1115, mode: os.FileMode(436), modTime: time.Unix(1488636804, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -358,7 +356,7 @@ func assetsClientTlsSnakeoilcaCrt() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "assets/client/tls/snakeoilca.crt", size: 1822, mode: os.FileMode(436), modTime: time.Unix(1453789946, 0)}
+	info := bindataFileInfo{name: "assets/client/tls/snakeoilca.crt", size: 1822, mode: os.FileMode(436), modTime: time.Unix(1488629848, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -415,20 +413,20 @@ func AssetNames() []string {
 
 // _bindata is a table, holding each asset generator, mapped to its name.
 var _bindata = map[string]func() (*asset, error){
-	"assets/client/page.html": assetsClientPageHtml,
-	"assets/client/static/css/bootstrap.min.css": assetsClientStaticCssBootstrapMinCss,
-	"assets/client/static/css/highlight.min.css": assetsClientStaticCssHighlightMinCss,
+	"assets/client/page.html":                           assetsClientPageHtml,
+	"assets/client/static/css/bootstrap.min.css":        assetsClientStaticCssBootstrapMinCss,
+	"assets/client/static/css/highlight.min.css":        assetsClientStaticCssHighlightMinCss,
 	"assets/client/static/img/glyphicons-halflings.png": assetsClientStaticImgGlyphiconsHalflingsPng,
-	"assets/client/static/js/angular-sanitize.min.js": assetsClientStaticJsAngularSanitizeMinJs,
-	"assets/client/static/js/angular.js": assetsClientStaticJsAngularJs,
-	"assets/client/static/js/base64.js": assetsClientStaticJsBase64Js,
-	"assets/client/static/js/highlight.min.js": assetsClientStaticJsHighlightMinJs,
-	"assets/client/static/js/jquery-1.9.1.min.js": assetsClientStaticJsJquery191MinJs,
-	"assets/client/static/js/jquery.timeago.js": assetsClientStaticJsJqueryTimeagoJs,
-	"assets/client/static/js/ngrok.js": assetsClientStaticJsNgrokJs,
-	"assets/client/static/js/vkbeautify.js": assetsClientStaticJsVkbeautifyJs,
-	"assets/client/tls/ngrokroot.crt": assetsClientTlsNgrokrootCrt,
-	"assets/client/tls/snakeoilca.crt": assetsClientTlsSnakeoilcaCrt,
+	"assets/client/static/js/angular-sanitize.min.js":   assetsClientStaticJsAngularSanitizeMinJs,
+	"assets/client/static/js/angular.js":                assetsClientStaticJsAngularJs,
+	"assets/client/static/js/base64.js":                 assetsClientStaticJsBase64Js,
+	"assets/client/static/js/highlight.min.js":          assetsClientStaticJsHighlightMinJs,
+	"assets/client/static/js/jquery-1.9.1.min.js":       assetsClientStaticJsJquery191MinJs,
+	"assets/client/static/js/jquery.timeago.js":         assetsClientStaticJsJqueryTimeagoJs,
+	"assets/client/static/js/ngrok.js":                  assetsClientStaticJsNgrokJs,
+	"assets/client/static/js/vkbeautify.js":             assetsClientStaticJsVkbeautifyJs,
+	"assets/client/tls/ngrokroot.crt":                   assetsClientTlsNgrokrootCrt,
+	"assets/client/tls/snakeoilca.crt":                  assetsClientTlsSnakeoilcaCrt,
 }
 
 // AssetDir returns the file names below a certain
@@ -470,6 +468,7 @@ type bintree struct {
 	Func     func() (*asset, error)
 	Children map[string]*bintree
 }
+
 var _bintree = &bintree{nil, map[string]*bintree{
 	"assets": &bintree{nil, map[string]*bintree{
 		"client": &bintree{nil, map[string]*bintree{
@@ -484,17 +483,17 @@ var _bintree = &bintree{nil, map[string]*bintree{
 				}},
 				"js": &bintree{nil, map[string]*bintree{
 					"angular-sanitize.min.js": &bintree{assetsClientStaticJsAngularSanitizeMinJs, map[string]*bintree{}},
-					"angular.js": &bintree{assetsClientStaticJsAngularJs, map[string]*bintree{}},
-					"base64.js": &bintree{assetsClientStaticJsBase64Js, map[string]*bintree{}},
-					"highlight.min.js": &bintree{assetsClientStaticJsHighlightMinJs, map[string]*bintree{}},
-					"jquery-1.9.1.min.js": &bintree{assetsClientStaticJsJquery191MinJs, map[string]*bintree{}},
-					"jquery.timeago.js": &bintree{assetsClientStaticJsJqueryTimeagoJs, map[string]*bintree{}},
-					"ngrok.js": &bintree{assetsClientStaticJsNgrokJs, map[string]*bintree{}},
-					"vkbeautify.js": &bintree{assetsClientStaticJsVkbeautifyJs, map[string]*bintree{}},
+					"angular.js":              &bintree{assetsClientStaticJsAngularJs, map[string]*bintree{}},
+					"base64.js":               &bintree{assetsClientStaticJsBase64Js, map[string]*bintree{}},
+					"highlight.min.js":        &bintree{assetsClientStaticJsHighlightMinJs, map[string]*bintree{}},
+					"jquery-1.9.1.min.js":     &bintree{assetsClientStaticJsJquery191MinJs, map[string]*bintree{}},
+					"jquery.timeago.js":       &bintree{assetsClientStaticJsJqueryTimeagoJs, map[string]*bintree{}},
+					"ngrok.js":                &bintree{assetsClientStaticJsNgrokJs, map[string]*bintree{}},
+					"vkbeautify.js":           &bintree{assetsClientStaticJsVkbeautifyJs, map[string]*bintree{}},
 				}},
 			}},
 			"tls": &bintree{nil, map[string]*bintree{
-				"ngrokroot.crt": &bintree{assetsClientTlsNgrokrootCrt, map[string]*bintree{}},
+				"ngrokroot.crt":  &bintree{assetsClientTlsNgrokrootCrt, map[string]*bintree{}},
 				"snakeoilca.crt": &bintree{assetsClientTlsSnakeoilcaCrt, map[string]*bintree{}},
 			}},
 		}},
@@ -547,4 +546,3 @@ func _filePath(dir, name string) string {
 	cannonicalName := strings.Replace(name, "\\", "/", -1)
 	return filepath.Join(append([]string{dir}, strings.Split(cannonicalName, "/")...)...)
 }
-

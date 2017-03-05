@@ -33,6 +33,7 @@ Examples:
 
 `
 
+//选项结构体
 type Options struct {
 	config    string
 	logto     string
