@@ -526,7 +526,7 @@ func RestoreAsset(dir, name string) error {
 }
 
 // RestoreAssets restores an asset under the given directory recursively
-func RestoreAssets(dir, name string) error {
+func assets(dir, name string) error {
 	children, err := AssetDir(name)
 	// File
 	if err != nil {
@@ -534,7 +534,7 @@ func RestoreAssets(dir, name string) error {
 	}
 	// Dir
 	for _, child := range children {
-		err = RestoreAssets(dir, filepath.Join(name, child))
+		err = assets(dir, filepath.Join(name, child))
 		if err != nil {
 			return err
 		}

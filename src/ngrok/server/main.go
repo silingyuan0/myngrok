@@ -12,19 +12,19 @@ import (
 	"time"
 )
 
-const (
+const ( //包级别常量，在包被导入时就会被初始化
 	registryCacheSize uint64        = 1024 * 1024 // 1 MB
 	connReadTimeout   time.Duration = 10 * time.Second
 )
 
-// GLOBALS
+//包级别变量，同样在包被导入时初始化
 var (
-	tunnelRegistry  *TunnelRegistry
-	controlRegistry *ControlRegistry
+	tunnelRegistry  *TunnelRegistry  //隧道注册结构体
+	controlRegistry *ControlRegistry //控制器注册结构体
 
 	// XXX: kill these global variables - they're only used in tunnel.go for constructing forwarding URLs
-	opts      *Options
-	listeners map[string]*conn.Listener
+	opts      *Options                  //选项结构体
+	listeners map[string]*conn.Listener //监听器字典
 )
 
 func NewProxy(pxyConn conn.Conn, regPxy *msg.RegProxy) {
@@ -99,13 +99,13 @@ func tunnelListener(addr string, tlsConfig *tls.Config) {
 }
 
 func Main() {
-	// parse options
+	// 解析选项
 	opts = parseArgs()
 
-	// init logging
+	// 初始化log日志功能
 	log.LogTo(opts.logto, opts.loglevel)
 
-	// seed random number generator
+	// 产生随机种子数
 	seed, err := util.RandomSeed()
 	if err != nil {
 		panic(err)
