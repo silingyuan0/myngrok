@@ -1,0 +1,3 @@
+#!/bin/sh
+../ngrokd -log="stdout" -log-level="DEBUG" -domain="host.wang" -httpAddr=":80" -tunnelAddr=":4443" 
+
