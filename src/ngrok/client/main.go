@@ -13,7 +13,7 @@ import (
 )
 
 func init() {
-	if runtime.GOOS == "windows" {
+	if runtime.GOOS == "windows" { //如果在windows平台下使用双击方式打开则退出
 		if mousetrap.StartedByExplorer() {
 			fmt.Println("Don't double-click ngrok!")
 			fmt.Println("You need to open cmd.exe and run it from the command line!")

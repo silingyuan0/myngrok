@@ -108,9 +108,9 @@ func ParseArgs() (opts *Options, err error) {
 		command:   flag.Arg(0),
 	}
 
-	switch opts.command {
+	switch opts.command { //解析第一个参数
 	case "list":
-		opts.args = flag.Args()[1:]
+		opts.args = flag.Args()[1:] //返回非flag格式的命令行参数数组
 	case "start":
 		opts.args = flag.Args()[1:]
 	case "version":
@@ -119,14 +119,14 @@ func ParseArgs() (opts *Options, err error) {
 	case "help":
 		flag.Usage()
 		os.Exit(0)
-	case "":
+	case "": //第一个参数为空输出错误
 		err = fmt.Errorf("Error: Specify a local port to tunnel to, or " +
 			"an ngrok command.\n\nExample: To expose port 80, run " +
 			"'ngrok 80'")
 		return
 
 	default:
-		if len(flag.Args()) > 1 {
+		if len(flag.Args()) > 1 { //如果非flag格式的参数个数超过1个，输出错误
 			err = fmt.Errorf("You may only specify one port to tunnel to on the command line, got %d: %v",
 				len(flag.Args()),
 				flag.Args())

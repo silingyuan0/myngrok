@@ -105,7 +105,7 @@ func Dial(addr, typ string, tlsCfg *tls.Config) (conn *loggedConn, err error) {
 }
 
 func DialHttpProxy(proxyUrl, addr, typ string, tlsCfg *tls.Config) (conn *loggedConn, err error) {
-	// parse the proxy address
+	// 解析代理地址
 	var parsedUrl *url.URL
 	if parsedUrl, err = url.Parse(proxyUrl); err != nil {
 		return

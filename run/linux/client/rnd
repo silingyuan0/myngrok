@@ -1,0 +1,2 @@
+#!/bin/sh
+../bin/ngrok -log="stdout" -log-level="ERROR" -config=ngrok.cfg start http

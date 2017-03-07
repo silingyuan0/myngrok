@@ -34,7 +34,7 @@ type Controller struct {
 	// 模型通过广播信道发送更新
 	updates *util.Broadcast
 
-	// 模型
+	// 模型接口
 	model mvc.Model
 
 	// 视图
