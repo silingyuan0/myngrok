@@ -1,3 +1,3 @@
 #!/bin/sh
-../../bin/ngrokd -log="stdout" -log-level="DEBUG" -domain="192.168.70.120" -httpAddr="192.168.70.120:80" -tunnelAddr="192.168.70.120:4443" 
+../../bin/ngrokd -log="stdout" -log-level="DEBUG" -domain="host.dsp" -httpAddr="192.168.70.120:80" -httpsAddr="192.168.70.120:443" -tunnelAddr="192.168.70.120:4443" 
 
