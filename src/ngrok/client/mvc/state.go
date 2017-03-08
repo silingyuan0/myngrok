@@ -2,7 +2,6 @@ package mvc
 
 import (
 	"ngrok/proto"
-
 	//metrics "github.com/rcrowley/go-metrics"
 )
 

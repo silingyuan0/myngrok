@@ -14,7 +14,6 @@ import (
 	"strings"
 	"sync"
 	"time"
-
 	//metrics "github.com/rcrowley/go-metrics"
 )
 
