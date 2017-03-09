@@ -1,8 +1,9 @@
 package log
 
 import (
-	log "code.google.com/p/log4go"
 	"fmt"
+
+	log "code.google.com/p/log4go" //导入log4go包，并将该包重命名为log
 )
 
 var root log.Logger = make(log.Logger)

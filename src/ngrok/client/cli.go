@@ -53,42 +53,42 @@ func ParseArgs() (opts *Options, err error) {
 		flag.PrintDefaults()
 		fmt.Fprintf(os.Stderr, usage2)
 	}
-
+	//命令行 -config参数，指定客户端的配置文件，默认为$HOME/.ngrok文件
 	config := flag.String(
 		"config",
 		"",
 		"Path to ngrok configuration file. (default: $HOME/.ngrok)")
-
+	//命令行 -log参数，指定客户端log的输出位置，默认为none（无输出）
 	logto := flag.String(
 		"log",
 		"none",
 		"Write log messages to this file. 'stdout' and 'none' have special meanings")
-
+	//命令行 -log-level参数，指定log输出的level等级
 	loglevel := flag.String(
 		"log-level",
 		"DEBUG",
 		"The level of messages to log. One of: DEBUG, INFO, WARNING, ERROR")
-
+	//命令行 -authtoken参数，指定用户的认证令牌（暂时无用后期加入用于限制用户）
 	authtoken := flag.String(
 		"authtoken",
 		"",
 		"Authentication token for identifying an ngrok.com account")
-
+	//命令行 -httpauth参数，配置http身份认证相关参数，格式为用户名：密码，用于保护公共的隧道端点
 	httpauth := flag.String(
 		"httpauth",
 		"",
 		"username:password HTTP basic auth creds protecting the public tunnel endpoint")
-
+	//命令行 -subdomian,配置子域名申请
 	subdomain := flag.String(
 		"subdomain",
 		"",
 		"Request a custom subdomain from the ngrok server. (HTTP only)")
-
+	//命令行 -hostname,配置主机名申请
 	hostname := flag.String(
 		"hostname",
 		"",
 		"Request a custom hostname from the ngrok server. (HTTP only) (requires CNAME of your DNS)")
-
+	//命令行 -proto,配置隧道的交互协议，默认http和https
 	protocol := flag.String(
 		"proto",
 		"http+https",
